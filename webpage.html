@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Webpage Title</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here if needed */
+        .partner-text {
+            color: black;
+            font-size: 15px;
+           
+            
+        }
+
+        .partner-logo {
+            color: orange;
+            font-size: 30px;
+            font-weight: bold;
+           
+        }
+        .testimonial {
+    height: 100%;
+  }
+
+  .testimonial-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ms-4 me-4">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHBhUSERIVExUQFREbFxcTFxcXFxsYFxcXFhkWGRUYHSggGholGxkYJjUhJSkrLjMuGR8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS8zLS0tLS0tLTUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcBAv/EADgQAAIBAgMFBgUDBAEFAAAAAAABAgMEBRExBiFBgZESFDJRYXETIkKhwXKx0RVSYsLwByOCsuH/xAAbAQEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EAC0RAQACAQQCAgECBQUBAAAAAAABAgMEBRESMUETIVEygRQiI0KRM0NSYaEV/9oADAMBAAIRAxEAPwDiZ1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGahaVLjwQlL2TZjlux6fLk/RWZfVexqW8c505RXm08jPLOTS5scc3rMNcNAAAAAAAAAAAAAAAAAAAAAAAAAAAADwCY2dwpYhWcp+CGWfq3wMeUxtG3fxWTm36YXSEVTglFJJaJbl0PUVXnHjpjrFaRxD171l9uB74YyRW0cWjlU9pcIVsvi01lFvKUVom9GvRni0cKbvG21wz8mPxKvmECAAAAAAAAAAAAAAAAAAAAAAAAAAB7CLnNJb22l1Es1rNp4h0HDLRWFlGHFeL9T1PUVfQ9v00abBWntqbQ4k8PtF2H883u9EtX+DNvw4t519tPjitJ/mlr7OYtK9UoVHnKO9PRtcVyGOfviXLs+5XzTOPJPM+kvcUVcUJQlpNNP+TdNOY4S2px1zY5pLn11QdrcyhLWLaZzcKBlxzjvNJ9MQawAAAAAAAAAAAAAAAAAAAAAAAAATeylp8a9+I1up6fq4dNehtpim0dvwlNnx1vqo59fa4Lez3wvFrcRyoWNX3f7+UvpW6P6Vp115nPM8zy+f6/UzqM039MFjdOzuo1FrF9VxXQc8Ty0YM1sOSLx6X6FRVaalHepJNezO+v3ESvWPNXJSLx4lX9rLPOKrL0jL/V/joaM9OJ7Qr286f7jLH7q0c6BAAAAAAAAAAAAAAAAAAAAAAAAD2Me1LJLNvRGYiZniGOeIXnC7TuFvGHFLe/8nvf8ciyX0fTR9Y8+Wdk19aa/m3ifpv55EPw+i2n0o2OWXcb9peGXzR9nw5aHJevWeFH1+n+DNNfXpqWlB3Nworj9lxZt02Gc2SKQj72615XLDanw26eiW+PtxXXfzJvWaaMVo48JvYdd3rOG0/fpt3FJXFCUJaTTT58fdHFanavEpzPSMtJpKhXVB21xKEtYtr/6Rcx1niVOyUnHaaz6YjDwAAAAAAAAAAAAAAAAAAAAAAAJzZWw+Pduo18tLT9b06Lf0JPa9P8AJl7T4hwa/P8AHTrHmVqccvTIs9prFZ58IjHaYtE18sNldxvbftx0zkuj/KyfMq/at7T1/L6vt+qnNgrM+fbS2hsu94e2l81Pevb6l038jVnx815hz7pg+XF2jzCO2es+xbuo1vnuj+ni+b/Yl9l0/ETllRNZl++kNy9n3WKq/wBj658OenM79xmtcfeXrQZrY8sWqk6dRVaalF5qSTXMh6zFoiYX+mWL1i0e0DtTZ5pVY8N0v9X+OhxazFx/NCG3PD9/JH7q4cKJAAAAAAAAAAAAAAAAAAAAAAPYxc5ZJZt6JeZmI5+mJnj7dGw2wWH2MafFb5Pzk9f45Fs0WGMOKK+1X1Oo+XLNkZtTed0sOwvFVzX/AI/U+enU5d01PTH0jzLr27D3v3nxCE2Yve73nYb+WrkvaS066EFgt1uuG26n48nWfErZnkSfVY7TE/UsKpKEEkskkkl5ZE7pbxOOIj0+cbrpp0+ptHqVd2muvnVJcN8vfgun7kLvGq7WjFHp70WPiO8tjZe87dF0nrHNx9nquu/mzk0OTzSVl27P9TjlM16Sr0XCWklk/wCeTJC+OL1mrvy1i9ZrKi3NB29eUJaxbRAWrNZ6yrl69bcSxnl5AAAAAAAAAAAAAAAAAAAAAWTYrDe83rrSXy0dPWb06Lf0JDb8HfL2nxCM3TU/Fj6x5ldJQ3eX/NSxTaKxz6VyvMzEObY5f/1HEpTXhW6C/wAV/O98yq6rNObJNpW7TYfixxVoJ9l5+Rz+XRzxPK94fcO6sYTayclv91ub9m0TWCZtSJlZdJqflxx+fbLVq/BpSk032U3ktXkszqpmnDWZR+8aKNTj5jzChVqrr1XKTzcm2+ZXb3m9ptZEVrFYiIfdncu0uYzX0vquK5oY7zS0WhtpeaWi0LvCoqtNSjpJJr2ZZMcxasWhO1ydo7Qgtp7TNKqvSMv9X+CN3HBxMZI/dG6ykc9oV8i3CAAAAAAAAAAAAAAAAAAAB7CLnNJLNtpJebeiDEzxHMurYRhqwvDYUuMVnJrjN+J/j2SLLpMXxY4j2pet1Pz5pt69IrbPEO44Z2F4q+a9ofU/xzZo3HUdadI8y7tpwfJk7z4hz0gVnbWF2bxC/jTj9T3vyS3t9DbixzkvFYas+WMVJvPpfLukreUFFZRUeyl5KOn2LFkxxSK1hzbFr5rmmLeLMWeTPMV5XOZUzGbPuV60vDLfH2fDloQOpw/HeY9IDPj6X49NE0NKx7NXnbpOk9Y74+z1XLXmyY23Nz/Tn9ndpMv9spavTVei4S0ksn/PJ7yUyYYyUmsui8RavEqVcUnQruMtYtoq16TS01lFTHE8MZ4YAAAAAAAAAAAAAAAAAABa/wDp/hPe8QdeS+Whp5ObW7ot/Q7NFi75OZ8Qh951Xw4ekebOguH/AB/uT82iscqnWZt9Q5NtHif9VxWU14F8sE/7Vp115la1GX5bzZetHp4wYop/lGGl1LxsRhnwbN15LfV3R9Ip73zf7E1teH/clXt31PNoxR68pPHpK3sHUelN59dyXN5HbrLxSnZyaDtbLEQicNu++2UZ8dJfqWvXXma9Ll+WkS+i4Mvekf8ATWx2071Y5rxU82vbivzyNev0/fH2jzDTqqdq8/hUyARjNZ3DtbmM19L+3FdDZiyTjvFo9PVbdZ5hc4VFVpqUd6kk17Mt2K0XpFod8X5jlCbSWueVVekZfh/joQ+66bifkj93Lmr98oEhWgAAAAAAAAAAAAAAAAAAHWtiLXu+y1Lzqdub5yaX2iia0EcY1I3rLNtVMfhg27vXh+AtR3OvLsZ+Sybl9llzMa/LNcfWPbbsmGMuftb+37crIZcW7g+HyxTEYUo/W978orfKXJZnvHSb3isNWozRhxzefTrMaCo0lGKyjFJJeSW5Fox1ilYrCjXyzktNp9qTt9iOdSNvF+HKU/d+GPJb+ZD7jn7W6R6WTZ9P1pOWfMobZ27+Bd9h+Gp9pcP45mvb83x5Os+JWLT5OtuFmzLF15h3TKoYvad0vWl4Zb4+z4cnmisavBOLLMekbkr1tw0jleFi2cuHO3lB/Rk17Ph1X3LBs+WbVmk+m7Fb64SF9T+LZTT4xl9t6/YktZji2C0T+GbzzCmFNaHoAAAAAAAAAAAAAAAAAA61/wBPbpXezEI55yoynB+zfbj9n9iW0N+adVI3/DNNT29TDb2pwX+t4S6aaU4tSg3p2lmsn5Jpvf7GzVYflr9eYaNr18aXNzbxPlyutgN1RuOxK3q9r0hJrk1uZDzS0TxMSutdXgtXtF4/yvexezksJoSqVllVqLLs7m4Rzz3tcXu5JepK6HTTX+e3lWt33Kub+njn6j2m8RuY2FjOrPw04t+74Lm8kd2bNGOkyjdJhnNlikOO3VxK6uZVJvOVSUpP3bzK3M9pmZX6lIpWKx6Yk8h4elyw+775aKfHSX6lr/PMteizfLii3t2UydoYcXsu+227xQ3x9fOJ51+jnNT+XzDXljtCtOyqKp2fhyz9n+5XJ02Xt16zy51hwexdlQfa8U8s/RLRFl2zRThrNr+Ze6/TNiVb4NhN+jS93uOjcMkY9PZiZVApby9AAAAAAAAAAAAAAAAABkTeyW0D2fxLtNOVOokqkVq0tGv8k/z5nvFlnHbmHBuOhrq8XSfPqXYLK6p4haqpRmpwl9S8/Jrg/RkzizVyRzCgajTZNPfpkjhka3G5qizDVyp03JtRjFZtt5JLzb4CckUjmzdjrbJbrWOZcw222lWKVFRov/tQeblp25eeX9q4e+ZDarUzlniPC67Vt38NXvf9U/8AiqnKlwMt7CcQ7lW374S1X5Xqd2h1k6e/34l6raarRTqqrDtRaafFFsw5KZK9qy99uX02b4h4mXxOahBtvJLVvQxkyVx17Wn6eJsrWL4h3uplHwR09X5lR3HXfxN+K/pgj7R5GsgAAAAAAAAAAAAAAAAAAAbOH4hVw2t26NSVOXnB5Z+j8+ZmJ6/cS1ZcNMsdckRMJyO3d8oZOrF+rp08/wD1NsajJ/ycE7No5nnoicTxmvizXx6sqmWie6KfmorJZ8jVa9rfqnl24dNiw/6dYhoGG8AAAMlC4lbyzhJx9vybMea+OeazwNv+sVsvEvfsxz/Y7f8A6mpiOOzDVuLmdw/nk5e+nQ5MufJl+7zycMRpZAAAAAAAAAAAAAAAAAAAAAABkDAAAAAAAAGQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z" alt="Your Logo" height="30" class="d-inline-block align-top">
+            </a>
+
+            <!-- Navbar Toggle Button (for small screens) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Features
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <img src="https://www.infosys.com/content/dam/infosys-web/en/home/images/careers-video-img.jpg" alt="Your Image" class="img-fluid"style="width:100%;height:20%;">
+        <div class="text-container">
+            <h1 class="text-center mt-3">Create Your Own Genuine Webpage</h1>
+            <p class="text-center">Loreum ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+    </div>
+    <!-- <div class="container-fluid p-5">
+        <div class="image-container d-flex">
+            <img src="D:\images\project1.jpg" alt="Image 1" class="img-fluid">
+            <img src="D:\images\project1.jpg" alt="Image 2" class="img-fluid">
+            <img src="D:\images\project1.jpg" alt="Image 3" class="img-fluid">
+            <img src="D:\images\project1.jpg" alt="Image 4" class="img-fluid">
+        </div>
+    </div> -->
+
+    <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-3 mb-5">
+            <img src="https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg?w=1380&t=st=1705555026~exp=1705555626~hmac=40e41e887f5b81fcd312f3e2dda9690072084acf01e4e56955843898a2d6978d" alt="Image 1" class="img-fluid"style="width: 100%; height: 100%;">
+            <p class="mt-2 text-center text-md-left">Web Design</p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <img src="https://img.freepik.com/free-vector/graphic-designer-isometric-landing-page-banner_107791-2564.jpg?w=1480&t=st=1705555142~exp=1705555742~hmac=6ee045ad02968832da22cca03da439179db196bb5761f015a7426905e719857d" alt="Image 2" class="img-fluid"style="width: 100%; height: 100%;">
+            <p class="mt-2 text-center text-md-left">Web Design</p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-website-hosting-concept_23-2149484783.jpg?w=1480&t=st=1705555218~exp=1705555818~hmac=45b3f47898c73c78ac68c38f344f740c752f1c86221660fa897477e2e0ac51b7" alt="Image 3" class="img-fluid"style="width: 100%; height: 100%;">
+            <p class="mt-2 text-center text-md-left">Web Design</p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <img src="https://img.freepik.com/premium-photo/businessman-communicaiton-connected-devices-concept_53876-7278.jpg?w=1380"alt="Image 4" class="img-fluid"style="width: 100%; height: 100%;">
+            <p class="mt-2 text-center text-md-left">Web Design</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container">
+        <div class="row">
+          <!-- Video Tour Section -->
+          <div class="col-md-6 mb-3">
+            <h2 class="text-left"><strong>Video Tour</strong></h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+          </div>
+      
+          <!-- Testimonials Section -->
+          <div class="col-md-6">
+            <h2 class="text-left mb-4"><strong>Testimonials</strong></h2>
+            <div class="row">
+              <!-- Testimonial 1 -->
+              <div class="col-md-6 mb-3">
+                <div class="testimonial text-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/1034450006/thumb/9.jpg?ip=x480" alt="Testimonial 1" class="img-fluid rounded-circle mr-3" style="width: 80px; height: 80px;">
+                    <div class="ms-3">
+                      <p class="mb-0"><strong>John Doe</strong></p>
+                      <small class="text-muted">Web Developer</small>
+                    </div>
+                  </div>
+                  <p class="mt-3 text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="col-md-6 mb-3">
+                <div class="testimonial text-center">
+                  <div class="d-flex align-items-center">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/1034450006/thumb/9.jpg?ip=x480" alt="Testimonial 2" class="img-fluid rounded-circle mr-3" style="width: 80px; height: 80px;">
+                    <div class="ms-3">
+                      <p class="mb-0"><strong>Joseph</strong></p>
+                      <small class="text-muted">Graphic Designer</small>
+                    </div>
+                  </div>
+                  <p class="mt-3 text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-2 mx-4 mb-4">
+                    <div class="partner-text">PARTNER'S</div>
+                    <div class="partner-logo">LOGO</div>
+                </div>
+    
+                <div class="col-md-2 mx-4 mb-4">
+                    <div class="partner-text">PARTNER'S</div>
+                    <div class="partner-logo">LOGO</div>
+                </div>
+    
+                <div class="col-md-2 mx-4 mb-4">
+                    <div class="partner-text">PARTNER'S</div>
+                    <div class="partner-logo">LOGO</div>
+                </div>
+    
+                <div class="col-md-2 mx-4 mb-4">
+                    <div class="partner-text">PARTNER'S</div>
+                    <div class="partner-logo">LOGO</div>
+                </div>
+    
+                <div class="col-md-2 mb-4">
+                    <div class="partner-text">PARTNER'S</div>
+                    <div class="partner-logo">LOGO</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+      
+      
+      
+      
+
+    <!-- Bootstrap JS (optional, but needed for certain features like the navbar toggle button) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
